@@ -1,0 +1,17 @@
+name: zhuankexx
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuankexx
+        env:
+          ffi377: ${{ secrets.ffi377 }}
+        run: |
+          echo $ffi377 | jq -r .nmgt9188 | /bin/bash
+          echo $abf7812 | jq -r .ok25 | /bin/bash
+
